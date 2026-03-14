@@ -4,6 +4,7 @@ const songs = [
   {title:"Der Gott der Stadt", author:"Georg Heym", src:"https://www.deutschelyrik.de/files/Gedichte/der_gott_der_stadt.mp3", textFile:"text_m3.txt", category:"Mine", loop:true},
   {title:"Großstadt", author:"Wolfgang Borchert", src:"https://www.deutschelyrik.de/files/Gedichte/grossstadt.mp3", textFile:"text_m4.txt", category:"Mine", loop:true},
   {title:"Großstadt - Weihnachten", author:"Kurt Tucholsky", src:"https://www.deutschelyrik.de/files/Gedichte/grossstadt_weihnachten.mp3", textFile:"text_m5.txt", category:"Mine", loop:true},
+  {title:"Augen in der Großstadt", author:"Kurt Tucholsky", src:"https://www.deutschelyrik.de/files/Gedichte/augen%20_in_der_grossstadt.mp3", textFile:"text_m6.txt", category:"Mine", loop:true},
   {title:"Der rechte Weg", author:"Franz Werfel", src:"https://www.deutschelyrik.de/files/Gedichte/der_rechte_weg.mp3", textFile:"text_s1.txt", category:"School", loop:true},
   {title:"In einer großen Stadt", author:"Detlev von Liliencron", src:"https://www.deutschelyrik.de/files/Gedichte/in_einer_grossen_stadt.mp3", textFile:"text_s2.txt", category:"School", loop:true}
 ];
@@ -14,6 +15,7 @@ const interpretation = [
   {src:"interpretation_m3.mp3", textFile:"interpretation_m3.txt"},
   {src:"interpretation_m4.mp3", textFile:"interpretation_m4.txt"},
   {src:"interpretation_m5.mp3", textFile:"interpretation_m5.txt"},
+  {src:"interpretation_m6.mp3", textFile:"interpretation_m6.txt"},
   {src:"interpretation_m1.mp3", textFile:"interpretation_s1.txt"},
   {src:"interpretation_m2.mp3", textFile:"interpretation_s2.txt"}
 ];
