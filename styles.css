@@ -1,0 +1,214 @@
+body{
+  font-family: Arial;
+  background:#f4f4f4;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:20px;
+}
+
+.container{
+  display:flex;
+  gap:30px;
+  align-items:flex-start;
+}
+
+/* Playlist */
+.playlist{
+  width:270px;
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  max-height: 80vh;
+  overflow-y:auto;
+}
+
+/* Category header */
+.category-container{
+  margin-bottom:15px;
+}
+
+.category{
+  font-weight:bold;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:5px 10px;
+  cursor:pointer;
+  background:#f0f0f0;
+  border-radius:8px 8px 0 0;
+  border:1px solid #ccc;
+}
+
+/* Tracks box */
+.category-tracks{
+  border:1px solid #ccc;
+  border-top:none;
+  border-radius:0 0 8px 8px;
+  background:#fafafa;
+  padding:5px 10px;
+  display:block;
+}
+
+.category-tracks .track{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:3px 0;
+  margin-bottom:3px;
+  border-bottom:1px solid #eee;
+  cursor:pointer;
+  transition: transform 0.2s ease, margin 0.2s ease, background 0.2s ease;
+}
+
+.category-tracks .track:last-child{
+  border-bottom:none;
+}
+
+.track.skipped{
+  background:#ddd;
+  color:#666;
+}
+
+/* Drag-and-drop visual */
+.track.dragging {
+  opacity: 0.5;
+  background: #cce5ff;
+  border: 1px dashed #007bff;
+}
+
+.track.placeholder {
+  height: 30px;
+  margin-bottom: 3px;
+  border: 2px dashed #007bff;
+  background: #e0f0ff;
+}
+
+/* Player */
+.player{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  width:500px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+#progress{
+  width:100%;
+  margin:20px 0;
+}
+
+.controls{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+
+button{
+  font-size:20px;
+  padding:10px 14px;
+  cursor:pointer;
+  border:none;
+  border-radius:6px;
+  background:#ddd;
+}
+
+button.active{
+  background:#bbb;
+}
+
+/* Next track info */
+#nextTrack{
+  margin-top:5px;
+  font-size:14px;
+  color:#555;
+}
+
+/* Text panel */
+.text-panel{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  margin-top:15px;
+  text-align:left;
+}
+
+#textContent{
+  white-space:pre-wrap;
+  font-size:14px;
+  line-height:1.4;
+}
+
+/* Verse numbers in text */
+.verse-number{
+  color: #888;
+  font-size: 12px;
+  display: inline-block;
+  width:20px;
+  text-align:right;
+  margin-right:5px;
+}
+
+/* Second player container */
+.player2{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  width:500px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Second player progress & controls reuse */
+#progress2{
+  width:100%;
+  margin:20px 0;
+}
+
+.controls2{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+
+button2{
+  font-size:20px;
+  padding:10px 14px;
+  cursor:pointer;
+  border:none;
+  border-radius:6px;
+  background:#ddd;
+}
+
+button2.active{
+  background:#bbb;
+}
+
+/* Second player text panel */
+.text-panel2{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  margin-top:15px;
+  text-align:left;
+}
+
+#textContent2{
+  white-space:pre-wrap;
+  font-size:14px;
+  line-height:1.4;
+}
+
+/* Verse numbers reuse */
+.verse-number2{
+  color: #888;
+  font-size: 12px;
+  display: inline-block;
+  width:20px;
+  text-align:right;
+  margin-right:5px;
+}
